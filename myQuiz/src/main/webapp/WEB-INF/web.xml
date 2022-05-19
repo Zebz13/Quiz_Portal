@@ -1,0 +1,52 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+
+  <servlet>
+  	<servlet-name>AnswerServlet</servlet-name>
+  	<display-name>AnswerServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.deloitte.myQuiz.servlets.AnswerServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>AdminServlet</servlet-name>
+  	<display-name>AdminServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.deloitte.myQuiz.servlets.AdminServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>QuizPlayerServlet</servlet-name>
+  	<display-name>QuizPlayerServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.deloitte.myQuiz.servlets.QuizPlayerServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>AddQuestionsServlet</servlet-name>
+  	<display-name>AddQuestionsServlet</display-name>
+  	<description></description>
+  	<servlet-class>com.deloitte.myQuiz.servlets.AddQuestionsServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  	<servlet-name>AnswerServlet</servlet-name>
+  	<url-pattern>/AnswerServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>AdminServlet</servlet-name>
+  	<url-pattern>/AdminServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>QuizPlayerServlet</servlet-name>
+  	<url-pattern>/QuizPlayerServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>AddQuestionsServlet</servlet-name>
+  	<url-pattern>/AddQuestionsServlet</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+       <welcome-file>login.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
